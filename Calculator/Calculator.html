@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Calculator</title>
+</head>
+<body>
+<form name="calculator" action="">
+<input type="text" name="input" /><br />
+<input type="button" name="zero" value="0"
+     onclick="document.calculator.input.value += '0'" />
+<input type="button" name="one"    value="1"
+     onclick="document.calculator.input.value += '1'" />
+<input type="button" name="two" value="2"
+     onclick="document.calculator.input.value += '2'" />
+<input type="button" name="three" value="3"
+     onclick="document.calculator.input.value += '3'" />
+<input type="button" name="four" value="4"
+     onclick="document.calculator.input.value += '4'" /><br />
+<input type="button" name="five" value="5"
+     onclick="document.calculator.input.value += '5'" />
+<input type="button" name="six" value="6"
+     onclick="document.calculator.input.value += '6'" />
+<input type="button" name="seven" value="7"
+     onclick="document.calculator.input.value += '7'" />
+<input type="button" name="eight" value="8"
+     onclick="document.calculator.input.value += '8'" />
+<input type="button" name="nine" value="9"
+     onclick="document.calculator.input.value += '9'" /><br />
+<input type="button" name="point" value="."
+     onclick="document.calculator.input.value += '.'" />
+<input type="button" name="plus" value="+"
+     onclick="document.calculator.input.value += '+'" />
+<input type="button" name="minus" value="-"
+     onclick="document.calculator.input.value += '-'" />
+<input type="button" name="multiply" value="*"
+     onclick="document.calculator.input.value += '*'" />
+<input type="button" name="divide" value="/"
+     onclick="document.calculator.input.value += '/'" /><br />
+<input type="button" name="calculate" value="="
+     onclick="document.calculator.input.value = eval(document.calculator.input.value)" />
+<input type="button" name="clear" value="C"
+     onclick="document.calculator.input.value = ''" />
+
+<input type="button" name="PI" value="PI" 
+    onclick="document.calculator.input.value += eval(Math.PI)"/>
+
+<input type="button" name="sqrt" value="sqrt" 
+    onclick="document.calculator.input.value = Math.sqrt(document.calculator.input.value)"/><br />
+
+<input type="button" name="Memory Store" value="MS" 
+    OnClick="document.calculator.input.value = M=(document.calculator.input.value)"/>
+
+<input type="button" name="Memory Recall" value="MR" 
+    OnClick="document.calculator.input.value = M"/>
+
+<input type="button" name="Memory Clear" value="MC" 
+    OnClick="document.calculator.input.value = M=''"/>
+
+<input type="button" name="All Clear" value="AC" 
+    OnClick="document.calculator.input.value= M='';document.calculator.input.value ='' "/>
+
+</form>
+</body>
+</html>
